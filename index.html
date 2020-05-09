@@ -6,6 +6,9 @@
   <title>Bodymakeを通して人生Happyに</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/54c0367ea1.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript">
@@ -23,8 +26,7 @@
 </head>
 <body>
 <div class="container">
-  <header>
-    <h1><a href="index.html">Bodymakeを通して人生Happyに❤️</a></h1>
+  <!-- <header>
     <nav>
       <ul>
         <li><a href="#about" class="menu">ABOUT</a></li>
@@ -34,38 +36,53 @@
         <li><a href="https://www.youtube.com/?gl=JP&hl=ja" target=”_blank” class="menu"><i class="fab fa-youtube"></i>Youtube</a></li>
       </ul>
     </nav>
+  </header> -->
+  <header class="row">
+    <nav class="navbar navbar-expand-lg navbar-light col-12">
+        <!-- ホームへ戻るリンク。ブランドロゴなどを置く。 -->
+        <h1><a href="index.html">Bodymakeを通して人生Happyに<i class="fas fa-heart"></i></a></h1>
+        <!-- 横幅が狭い時に出るハンバーガーボタン -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- メニュー項目 -->
+        <div class="collapse navbar-collapse" id="nav-bar">
+            <ul class="navbar-nav">
+                <li><a href="#about" class="menu nav-link">ABOUT</a></li>
+                <li><a href="#yoga" class="menu nav-link">Yoga studio</a></li>
+                <li><a href="#infomation" class="menu nav-link"></i>Information</a></li>
+                <li><a href="https://www.instagram.com/?hl=ja" target=”_blank” class="menu nav-link"><i class="fab fa-instagram-square"></i>Instagram</a></li>
+                <li><a href="https://www.youtube.com/?gl=JP&hl=ja" target=”_blank” class="menu nav-link"><i class="fab fa-youtube"></i>Youtube</a></li>
+            </ul>
+        </div>
+    </nav>
   </header>
   <div class="row">
-    <div class="col-lg-12">
-      <img src="https://source.unsplash.com/random/1160x600" alt="メイン画像" id="main-img">
+    <div class="col-12">
+      <img src="image/yoga-2607017_1280.jpg" alt="メイン画像" id="main-img" class="img-fluid">
     </div>
   </div>
   <h2 id="about">ABOUT</h2>
-  <div class="wraper">
-    <img src="https://source.unsplash.com/random/300x300" alt="">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis consectetur modi autem facilis earum maxime recusandae quis dolorum laudantium, similique veniam minima, officia totam expedita nisi vitae praesentium molestiae!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor, maiores atque eaque minus voluptatem quam eos nostrum impedit officia, quae porro tempora reprehenderit quod, voluptate minima vitae aspernatur repellat.</p>
+  <div class="row">
+    <img src="https://source.unsplash.com/random/300x300" alt="テキストサイド画像" class="col-lg-4 text-side">
+    <p class="col-lg-8 align-self-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis consectetur modi autem facilis earum maxime recusandae quis dolorum laudantium, similique veniam minima, officia totam expedita nisi vitae praesentium molestiae!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor, maiores atque eaque minus voluptatem quam eos nostrum impedit officia, quae porro tempora reprehenderit quod, voluptate minima vitae aspernatur repellat.</p>
   </div>
   <h2 id="yoga">Yoga studio</h2>
-  <div class="wraper">
-    <span>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis consectetur modi autem facilis earum maxime recusandae quis dolorum laudantium, similique veniam minima, officia totam expedita nisi vitae praesentium molestiae!
+  <div class="row">
+    <img src="https://source.unsplash.com/random/300x300" alt="" id="right-img" class="col-lg-4 order-lg-1 text-side">
+    <p class="col-lg-8 order-lg-0 align-self-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis consectetur modi autem facilis earum maxime recusandae quis dolorum laudantium, similique veniam minima, officia totam expedita nisi vitae praesentium molestiae!
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor, maiores atque eaque minus voluptatem quam eos nostrum impedit officia, quae porro tempora reprehenderit quod, voluptate minima vitae aspernatur repellat.</p>
-    </span>
-    <img src="https://source.unsplash.com/random/300x300" alt="" id="right-img">
   </div>
   <h2 id="infomation">Information</h2>
-  <div class="wraper">
-    <img src="https://source.unsplash.com/random/300x300" alt="">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis consectetur modi autem facilis earum maxime recusandae quis dolorum laudantium, similique veniam minima, officia totam expedita nisi vitae praesentium molestiae!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor, maiores atque eaque minus voluptatem quam eos nostrum impedit officia, quae porro tempora reprehenderit quod, voluptate minima vitae aspernatur repellat.</p>
+  <div class="row">
+    <img src="https://source.unsplash.com/random/300x300" alt="テキストサイド画像" class="col-lg-4 text-side">
+    <p class="col-lg-8 align-self-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis consectetur modi autem facilis earum maxime recusandae quis dolorum laudantium, similique veniam minima, officia totam expedita nisi vitae praesentium molestiae!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolor, maiores atque eaque minus voluptatem quam eos nostrum impedit officia, quae porro tempora reprehenderit quod, voluptate minima vitae aspernatur repellat.</p>
   </div>
   <footer>
     Copyright - Manabu Bannai, 2019 All Rights Reserved.
   </footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
